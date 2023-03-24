@@ -12,7 +12,7 @@ frame_window = st.image( [] )
 take_picture_button = st.button( 'Take Picture' )
 while True:
     # Request the image from the server
-    response = requests.get(url="http://192.168.1.7:8080//photo.jpg")
+    response = requests.get(url="http://192.168.1.7:8080//photo.jpg")         //Add the url in your IP Webcam app on phone
     imgNp = np.array(bytearray(response.content), dtype=np.uint8)
     frame = cv2.imdecode(imgNp, cv2.IMREAD_UNCHANGED ) 
     # As OpenCV decodes images in BGR format, we'd convert it to the RGB format

@@ -1,24 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[41]:
-
-
 import numpy as np 
 import pandas as pd
-
-
-# In[42]:
-
-
 import os
 for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
-
-
-# In[43]:
-
 
 import keras
 from keras.models import Sequential
@@ -27,16 +15,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-
-# In[44]:
-
-
 train_df=pd.read_csv(r'C:\Users\dhrut\my python\ASL_data_set\sign_mnist_train\sign_mnist_train.csv')
 test_df=pd.read_csv(r'C:\Users\dhrut\my python\ASL_data_set\sign_mnist_test\sign_mnist_test.csv')
-
-
-# In[45]:
-
 
 train_df.info()
 

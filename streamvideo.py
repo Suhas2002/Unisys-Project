@@ -23,4 +23,4 @@ while True:
     if take_picture_button:
         # Pass the frame to a model
         # And show the output here...
-        break
+        break 
